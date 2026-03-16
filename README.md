@@ -34,11 +34,14 @@ claude-starter/
 
 Run this from the **root of your existing repo** — it copies all template files in without touching your git history:
 
+`degit` only overwrites files that share the same path. Everything else in your repo is untouched.
+
 ```bash
-npx degit your-username/claude-starter
+mv README.md README.project.md
+npx degit khizar925/claude-code-workflow-template
 ```
 
-> **First time?** `npx` runs `degit` without a global install. It overwrites files with the same name, so check for conflicts with any existing `CLAUDE.md` or `docs/` folder first.
+This gives you both — the template `README.md` and your original as `README.project.md`.
 
 ### 2. Fill in project context
 
