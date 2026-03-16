@@ -40,13 +40,6 @@ npx degit your-username/claude-starter
 
 > **First time?** `npx` runs `degit` without a global install. It overwrites files with the same name, so check for conflicts with any existing `CLAUDE.md` or `docs/` folder first.
 
-Or clone as a standalone project:
-
-```bash
-git clone https://github.com/your-username/claude-starter.git my-project
-cd my-project
-```
-
 ### 2. Fill in project context
 
 Open Claude Code in your project root and run the prompts below — one file at a time.
@@ -94,39 +87,6 @@ Leave any section with its comment placeholder if nothing is known yet. Do not i
 #### Verify `tasks/lessons.md` and `tasks/todo.md`
 
 These start empty — Claude populates them automatically during sessions. No action needed.
-
----
-
-### 3. Connect MCP tools (optional)
-
-For the `/report` and `/sprint` commands to pull Asana tickets automatically:
-- Open Claude Code settings
-- Connect the **Asana MCP**
-- Add your workspace credentials
-
----
-
-### 4. Run your first session
-
-Plan a feature before building:
-```
-/plan add user authentication with JWT
-```
-
-Run a daily standup report:
-```
-/report regular standup, worked on auth middleware
-```
-
-Log a correction as a lesson:
-```
-/lesson added business logic inside the route handler instead of the service layer
-```
-
-Generate a sprint summary:
-```
-/sprint 3rd March, 2026 – 16th March, 2026
-```
 
 ---
 
